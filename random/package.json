@@ -7,13 +7,13 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "react-scripts start"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@gobolt/genesis": "^0.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scripts": "^3.0.1",
     "styled-components": "^6.1.17"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.8.3",
     "typescript-eslint": "^8.26.1",
     "vite": "^6.3.1"
   }
