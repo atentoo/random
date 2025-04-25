@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Card, Button, Typography, Tooltip, Popover, Toast } from '@gobolt/genesis'
-import { GENESIS } from '@gobolt/genesis'
 
 function App() {
   const [pic, setPic] = useState<keyof typeof pics | null>(null);
@@ -16,7 +15,7 @@ function App() {
     }
   };
 
-  const [showPopover, setShowPopover] = useState(false);
+  const setShowPopover = useState(false)[1];
   const [showToast, setShowToast] = useState(false);
   const toast = () => {
     setShowToast(false);
@@ -49,7 +48,7 @@ function App() {
       </Card>
       <div style={{ marginTop: '20px', textAlign: 'center' }}>
         <Popover
-          placement="bottom"
+          placement="topright"
           title={"Are you sure you want to reset?"}
           onOpenChange={visible => {
             setShowPopover(visible);
